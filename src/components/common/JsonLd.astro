@@ -1,0 +1,76 @@
+---
+export interface Props {
+  type?: 'LocalBusiness' | 'Product' | 'Service' | 'ImageGallery';
+  name?: string;
+  description?: string;
+  image?: string;
+}
+
+const { type = 'LocalBusiness', name, description, image } = Astro.props;
+
+const localBusiness = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://www.agthermotechnik.de',
+  name: 'A&G Thermotechnik GmbH',
+  description: 'Ihr Experte für Heizungs-, Klima- und Lüftungssysteme in Düsseldorf. Über 20 Jahre Erfahrung.',
+  url: 'https://www.agthermotechnik.de',
+  telephone: '+4917638208475',
+  email: 'info@agthermotechnik.de',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Am Trippelsberg 92',
+    addressLocality: 'Düsseldorf',
+    postalCode: '40589',
+    addressCountry: 'DE',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 51.17,
+    longitude: 6.85,
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Nordrhein-Westfalen',
+  },
+  priceRange: '$$',
+  openingHours: 'Mo-Fr 08:00-18:00',
+};
+
+let structuredData: Record<string, unknown>;
+
+if (type === 'LocalBusiness') {
+  structuredData = localBusiness;
+} else if (type === 'Product' && name) {
+  structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: name,
+    description: description || '',
+    brand: {
+      '@type': 'Organization',
+      name: 'A&G Thermotechnik GmbH',
+    },
+    ...(image ? { image } : {}),
+  };
+} else if (type === 'Service' && name) {
+  structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: name,
+    description: description || '',
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'A&G Thermotechnik GmbH',
+    },
+    areaServed: {
+      '@type': 'State',
+      name: 'Nordrhein-Westfalen',
+    },
+  };
+} else {
+  structuredData = localBusiness;
+}
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />

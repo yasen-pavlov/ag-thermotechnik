@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Abgeschlossene Projekte',
+  description: 'Entdecken Sie unsere erfolgreich abgeschlossenen Projekte im Bereich Heizung, Klima und Lüftung — Behaglichkeit zu jeder Jahreszeit.',
+};
+
+const projects = (await getCollection('project')).sort(
+  (a, b) => (a.data.order || 99) - (b.data.order || 99)
+);
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Abgeschlossene <span class="text-accent">Projekte</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      Hier teilen wir mit Stolz unsere erfolgreich abgeschlossenen Aufträge und präsentieren die Ergebnisse unserer harten Arbeit und unseres Engagements. <em>Behaglichkeit zu jeder Jahreszeit.</em>
+    </Fragment>
+  </Hero>
+
+  <section class="mx-auto max-w-6xl px-4 sm:px-6 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map((project) => (
+        <a
+          href={`/projekte/${project.data.slug}`}
+          class="group block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+        >
+          {project.data.images && project.data.images.length > 0 ? (
+            <div class="aspect-video bg-gray-100 overflow-hidden">
+              <img
+                src={project.data.images[0]}
+                alt={project.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+          ) : (
+            <div class="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+              <svg class="w-12 h-12 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+          )}
+          <div class="p-4">
+            <h3 class="font-semibold text-sm leading-tight group-hover:text-primary transition-colors line-clamp-2">
+              {project.data.title}
+            </h3>
+            {project.data.products && project.data.products.length > 0 && (
+              <div class="mt-2 flex flex-wrap gap-1">
+                {project.data.products.slice(0, 2).map((prod) => (
+                  <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full">{prod}</span>
+                ))}
+                {project.data.products.length > 2 && (
+                  <span class="text-xs text-muted">+{project.data.products.length - 2} mehr</span>
+                )}
+              </div>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Ihr Projekt besprechen',
+        href: '/kontakt',
+        icon: 'tabler:phone',
+      },
+    ]}
+  >
+    <Fragment slot="title">Ihr Projekt könnte das nächste sein</Fragment>
+    <Fragment slot="subtitle">
+      Kontaktieren Sie uns für eine unverbindliche Beratung zu Ihrem Heizungs-, Klima- oder Lüftungsprojekt.
+    </Fragment>
+  </CallToAction>
+</Layout>

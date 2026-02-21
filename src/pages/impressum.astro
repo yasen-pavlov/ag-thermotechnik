@@ -1,0 +1,87 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'Impressum',
+  description: 'Impressum der A&G Thermotechnik GmbH, Am Trippelsberg 92, 40589 Düsseldorf.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">Impressum</Fragment>
+  </Hero>
+
+  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-12 md:py-16">
+    <div class="prose prose-lg max-w-none">
+      <h2>Angaben gemäß § 5 TMG</h2>
+
+      <p>
+        <strong>A&G Thermotechnik GmbH</strong><br />
+        Am Trippelsberg 92<br />
+        40589 Düsseldorf<br />
+        Deutschland
+      </p>
+
+      <h3>Kontakt</h3>
+      <p>
+        Telefon: <a href="tel:+4917638208475">+49 176 38 208 475</a><br />
+        E-Mail: <a href="mailto:info@agthermotechnik.de">info@agthermotechnik.de</a>
+      </p>
+
+      <h3>Handelsregister</h3>
+      <p>
+        Registergericht: Amtsgericht Düsseldorf<br />
+        Registernummer: HRB 100 775
+      </p>
+
+      <h3>Umsatzsteuer-ID</h3>
+      <p>
+        Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />
+        DE 36 333 9018
+      </p>
+
+      <h3>Geschäftsführung</h3>
+      <p>
+        Dr. rer. nat Georgi Topalov / Dipl.-Ing. Anton Pavlov<br />
+        Berufsbezeichnung: Installateur und Heizungsbauer
+      </p>
+
+      <h3>Zuständige Aufsichtsbehörde</h3>
+      <p>
+        Handwerkskammer Düsseldorf<br />
+        Georg-Schulhoff-Platz 1<br />
+        40221 Düsseldorf<br />
+        Telefon: +49 211 8795-0<br />
+        Fax: +49 211 8795-110<br />
+        Website: <a href="http://www.hwk-duesseldorf.de" target="_blank" rel="noopener noreferrer">www.hwk-duesseldorf.de</a>
+      </p>
+
+      <h3>Haftung für Inhalte</h3>
+      <p>
+        Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Wir bemühen uns, korrekte und aktuelle Informationen bereitzustellen, können jedoch keine Gewähr für die Richtigkeit aller Inhalte übernehmen.
+      </p>
+
+      <h3>Haftung für Links</h3>
+      <p>
+        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      </p>
+
+      <h3>Urheberrecht</h3>
+      <p>
+        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+      </p>
+
+      <h3>Bildquellen</h3>
+      <p>
+        Fotos von stock.adobe.com, mit Ausnahme der Projektfotos, die von A&G Thermotechnik stammen.
+      </p>
+
+      <h3>EU-Streitschlichtung</h3>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Wir sind nicht bereit und nicht verpflichtet, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+    </div>
+  </section>
+</Layout>

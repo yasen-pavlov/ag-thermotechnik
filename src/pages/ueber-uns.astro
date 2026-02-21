@@ -1,0 +1,140 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Über Uns',
+  description: 'Erfahren Sie mehr über A&G Thermotechnik GmbH — über 20 Jahre Erfahrung in Heizungs-, Klima- und Lüftungssystemen in Düsseldorf.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero -->
+  <Hero>
+    <Fragment slot="title">
+      Über <span class="text-accent">A&G Thermotechnik</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      Erfahren Sie mehr über unser Unternehmen, unsere Mission und unsere Werte.
+    </Fragment>
+  </Hero>
+
+  <!-- Our History -->
+  <Content
+    isReversed
+    tagline="Unsere Geschichte"
+    title="Über 20 Jahre Erfahrung"
+    image={{
+      src: '~/assets/images/services/about-hero.jpeg',
+      alt: 'A&G Thermotechnik',
+    }}
+  >
+    <Fragment slot="content">
+      <p class="mb-4">
+        Wir sind ein Unternehmen, das bereits über 20 Jahre Erfahrung im Bereich Heizungs-, Klima- und Lüftungssysteme verfügt. Unsere Leidenschaft ist es, durch erfolgreich abgeschlossene Projekte Komfortlösungen zu schaffen.
+      </p>
+      <p>
+        A&G Thermotechnik GmbH begann seine Reise als neues Unternehmen, aber mit einem Team, das von über 20 Jahren Erfahrung im Bereich Heizungs-, Kühlungs- und Lüftungssysteme angetrieben wird.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Our Mission -->
+  <Content
+    tagline="Unsere Mission"
+    title="Behaglichkeit und Komfort für Ihr Zuhause"
+  >
+    <Fragment slot="content">
+      <p class="mb-4">
+        Unsere Mission ist es, Ihre Häuser und Arbeitsplätze in gemütliche und funktionelle Umgebungen zu verwandeln. Wir glauben, dass Klima und Komfort eine zentrale Rolle bei der Verbesserung der Lebensqualität spielen.
+      </p>
+      <p>
+        Durch maßgeschneiderte Raumklimalösungen und den Einsatz modernster Technologien sorgen wir dafür, dass Sie sich in Ihren Räumlichkeiten das ganze Jahr über wohlfühlen.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Why Us -->
+  <Features
+    tagline="Warum wir?"
+    title="Was uns auszeichnet"
+    items={[
+      {
+        title: 'Experten-Team',
+        description:
+          'Wir verfügen über umfangreiches Wissen und bereits zwei Jahrzehnte Erfahrung in Heizungs-, Klima- und Lüftungssystemen.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Individueller Ansatz',
+        description:
+          'Jedes Projekt ist einzigartig — wir erstellen maßgeschneiderte Lösungen, die Ihren spezifischen Anforderungen entsprechen.',
+        icon: 'tabler:puzzle',
+      },
+      {
+        title: 'Qualität und Effizienz',
+        description:
+          'Alles, was wir tun, ist darauf ausgerichtet, höchste Qualitäts- und Effizienzstandards zu erreichen und gleichzeitig die Umwelt zu schützen.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <!-- Our Values -->
+  <Features2
+    tagline="Unsere Werte"
+    title="Wofür wir stehen"
+    items={[
+      {
+        title: 'Professionalität',
+        description:
+          'Jedes Projekt, unabhängig von dem Umfang, wird ernsthaft genommen und mit Verantwortung und Liebe zum Detail ausgeführt.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Innovation',
+        description:
+          'Wir suchen ständig nach neuen und effektiveren Wegen, um unsere Dienstleistungen zu verbessern.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Vertrauen',
+        description:
+          'Wir bauen langfristige Beziehungen zu unseren Kunden auf, die auf Vertrauen und ausgereiftem Service basieren.',
+        icon: 'tabler:heart-handshake',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- CTA -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Kontakt aufnehmen',
+        href: '/kontakt',
+        icon: 'tabler:mail',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Lernen Sie uns kennen
+    </Fragment>
+    <Fragment slot="subtitle">
+      Vereinbaren Sie ein unverbindliches Erstgespräch — wir freuen uns auf Ihr Projekt.
+    </Fragment>
+  </CallToAction>
+</Layout>

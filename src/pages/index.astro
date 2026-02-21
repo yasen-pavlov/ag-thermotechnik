@@ -1,0 +1,274 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'A&G Thermotechnik GmbH — Heizung, Klima & Lüftung in Düsseldorf',
+  ignoreTitleTemplate: true,
+  description:
+    'A&G Thermotechnik GmbH — Ihr Experte für Heizungs-, Klima- und Lüftungssysteme in Düsseldorf. Über 20 Jahre Erfahrung. Wärmepumpen, Gaskessel, Fußbodenheizung und mehr.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Dienstleistungen',
+        href: '/dienstleistungen',
+        icon: 'tabler:settings',
+      },
+      {
+        text: 'Kontakt aufnehmen',
+        href: '/kontakt',
+        icon: 'tabler:phone',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Wir schaffen <span class="text-accent">Behaglichkeit</span> und noch mehr
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Ihr Ansprechpartner für kreative Heizungs-, Klima- und Lüftungslösungen in Düsseldorf und Umgebung — mit über 20 Jahren Branchenerfahrung.
+    </Fragment>
+  </Hero>
+
+  <!-- Brands / Partner Logos -->
+  <Brands
+    title="Unsere Partner"
+    subtitle="Wir arbeiten mit führenden Herstellern zusammen"
+    icons={[
+      'tabler:certificate',
+    ]}
+    images={[]}
+  />
+
+  <!-- Core Value Propositions -->
+  <Features
+    id="features"
+    tagline="Unser Versprechen"
+    title="Warum A&G Thermotechnik?"
+    subtitle="Vertrauen Sie auf Erfahrung, Qualität und individuelle Lösungen für Ihr Wohlbefinden."
+    items={[
+      {
+        title: 'Maßgeschneiderte Lösungen',
+        description:
+          'Jedes Projekt ist einzigartig, daher arbeiten wir mit Ihnen zusammen, um eine individuelle Lösung zu schaffen, die Ihren spezifischen Anforderungen entspricht.',
+        icon: 'tabler:puzzle',
+      },
+      {
+        title: 'Umweltverantwortung',
+        description:
+          'Unsere Systeme verbinden Komfort mit Energieeffizienz und ökologischen Standards für eine nachhaltige Zukunft.',
+        icon: 'tabler:leaf',
+      },
+      {
+        title: 'Fachkompetenz',
+        description:
+          'Unsere Techniker sind Experten mit umfassender Erfahrung und Kenntnissen in Heizungs-, Klima- und Lüftungssystemen.',
+        icon: 'tabler:award',
+      },
+    ]}
+  />
+
+  <!-- Stats -->
+  <Stats
+    tagline="In Zahlen"
+    stats={[
+      { title: 'Jahre Erfahrung', amount: '20+' },
+      { title: 'Abgeschlossene Projekte', amount: '28+' },
+      { title: 'Produktkategorien', amount: '10+' },
+      { title: 'Herstellerpartner', amount: '7+' },
+    ]}
+  />
+
+  <!-- About Content -->
+  <Content
+    isReversed
+    tagline="Über uns"
+    title="A&G Thermotechnik GmbH"
+    items={[
+      {
+        title: 'Über 20 Jahre Erfahrung',
+        description:
+          'Unser Team bringt mehr als zwei Jahrzehnte Expertise im Bereich Heizungs-, Klima- und Lüftungssysteme mit.',
+      },
+      {
+        title: 'Professionelles Team',
+        description:
+          'Wir legen Wert auf detailgetreue Ausführung und individuelle Kundenbetreuung, abgestimmt auf Ihre Bedürfnisse.',
+      },
+      {
+        title: 'Regionale Expertise',
+        description:
+          'Von unserem Standort in Düsseldorf betreuen wir Kunden in ganz NRW und darüber hinaus.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/services/about-hero.jpeg',
+      alt: 'A&G Thermotechnik Team',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">Ihre Behaglichkeit ist unsere Mission</h3>
+      Wir schaffen echte Behaglichkeit, indem wir Ihre Häuser und Arbeitsplätze in angenehme Umgebungen verwandeln. Vertrauen Sie auf unser Fachwissen und unsere Leidenschaft für Komfortlösungen.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Process Steps -->
+  <Steps
+    title="Unser Prozess"
+    subtitle="Von der ersten Beratung bis zur fertigen Installation — wir begleiten Sie Schritt für Schritt."
+    items={[
+      {
+        title: 'Schritt 1: <span class="font-medium">Beratung</span>',
+        description:
+          'In enger Zusammenarbeit mit unseren Experten definieren wir Ihre Ideen und Bedürfnisse. Wir hören zu, analysieren und beraten.',
+        icon: 'tabler:message-circle',
+      },
+      {
+        title: 'Schritt 2: <span class="font-medium">Konzept & Planung</span>',
+        description:
+          'Detaillierte Pläne für jeden Aspekt der Installation — von der technischen Planung bis zur Materialauswahl und Budgetierung.',
+        icon: 'tabler:clipboard-list',
+      },
+      {
+        title: 'Schritt 3: <span class="font-medium">Installation</span>',
+        description:
+          'Professionelle Umsetzung durch qualifizierte Techniker. Integration modernster Technologien und umfassende Prüfung vor Projektabschluss.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Service & Wartung',
+        description:
+          'Langfristige Betreuung mit regelmäßigen Inspektionen, Diagnose und Reparaturen für optimale Funktion Ihrer Systeme.',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/services/installation.jpeg',
+      alt: 'Installationsprozess',
+    }}
+  />
+
+  <!-- Product/Service Highlights -->
+  <Features2
+    title="Unsere Produkte & Lösungen"
+    subtitle="Entdecken Sie unser umfangreiches Angebot an Heizungs-, Klima- und Lüftungslösungen."
+    tagline="Angebot"
+    items={[
+      {
+        title: 'Wärmepumpen',
+        description: 'Innovative Systeme, die Umweltenergie für effizientes Heizen und Kühlen nutzen.',
+        icon: 'tabler:temperature',
+        callToAction: { text: 'Mehr erfahren', href: '/produkte/waermepumpen' },
+      },
+      {
+        title: 'Gaskessel',
+        description: 'Zuverlässige und kosteneffektive Heizungslösungen mit modernster Brennwerttechnologie.',
+        icon: 'tabler:flame',
+        callToAction: { text: 'Mehr erfahren', href: '/produkte/gaskessel' },
+      },
+      {
+        title: 'Fußbodenheizung',
+        description: 'Gleichmäßige Wärmeverteilung für maximalen Komfort und Ästhetik.',
+        icon: 'tabler:grid-dots',
+        callToAction: { text: 'Mehr erfahren', href: '/produkte/fussbodenheizung' },
+      },
+      {
+        title: 'Klimaanlage',
+        description: 'Ganzjährige Komforttemperatur und unabhängige Temperaturregelung.',
+        icon: 'tabler:snowflake',
+        callToAction: { text: 'Mehr erfahren', href: '/produkte/klimaanlage' },
+      },
+      {
+        title: 'Intelligente Steuerung',
+        description: 'Steuern Sie Ihr Raumklima bequem per Smartphone von überall.',
+        icon: 'tabler:smart-home',
+        callToAction: { text: 'Mehr erfahren', href: '/produkte/intelligente-steuerung' },
+      },
+      {
+        title: 'Alle Produkte',
+        description: 'Entdecken Sie unser vollständiges Sortiment an Heizungs- und Klimatechnik.',
+        icon: 'tabler:apps',
+        callToAction: { text: 'Alle Produkte', href: '/produkte' },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- FAQs -->
+  <FAQs
+    title="Häufig gestellte Fragen"
+    subtitle="Antworten auf die wichtigsten Fragen rund um Heizung, Klima und Lüftung."
+    tagline="FAQ"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Welche Heizsysteme bieten Sie an?',
+        description:
+          'Wir bieten ein breites Spektrum an Heizsystemen: Wärmepumpen (Luft-Wasser, Wasser-Wasser, Erdreich-Wasser), Gaskessel mit Brennwerttechnologie, Biomassekessel, Fußbodenheizung, Heizkörper und hybride Systeme. Wir beraten Sie gerne, welches System am besten zu Ihrem Gebäude passt.',
+      },
+      {
+        title: 'Arbeiten Sie mit bestimmten Herstellern zusammen?',
+        description:
+          'Ja, wir sind Partner führender Hersteller wie Buderus, Vaillant, Viessmann, Bosch, Daikin, Panasonic und Hitachi. So können wir Ihnen stets hochwertige Produkte mit zuverlässigem Service bieten.',
+      },
+      {
+        title: 'Wie läuft ein Projekt bei A&G Thermotechnik ab?',
+        description:
+          'Unser Prozess beginnt mit einer persönlichen Beratung, gefolgt von einer detaillierten Konzeption und Planung. Nach der professionellen Installation bieten wir langfristigen Service und Wartung. Von Anfang bis Ende begleiten wir Sie persönlich.',
+      },
+      {
+        title: 'Bieten Sie auch Wartung und Reparatur an?',
+        description:
+          'Selbstverständlich! Wir bieten umfassende Service- und Wartungsleistungen für alle von uns installierten Systeme. Regelmäßige Inspektionen, Diagnose, Reparaturen und Modernisierungen gehören zu unserem Leistungsumfang.',
+      },
+      {
+        title: 'In welchem Gebiet sind Sie tätig?',
+        description:
+          'Unser Hauptstandort ist in Düsseldorf. Wir betreuen Kunden in ganz Nordrhein-Westfalen (NRW) und auch in angrenzenden Bundesländern wie Rheinland-Pfalz.',
+      },
+    ]}
+  />
+
+  <!-- Call to Action -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Kontakt aufnehmen',
+        href: '/kontakt',
+        icon: 'tabler:mail',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Bereit für Ihr Projekt?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Kontaktieren Sie uns für eine unverbindliche Beratung.<br class="hidden md:inline" />
+      <span class="font-semibold">+49 176 38 208 475</span> · info@agthermotechnik.de
+    </Fragment>
+  </CallToAction>
+</Layout>

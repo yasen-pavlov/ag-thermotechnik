@@ -1,0 +1,106 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Produkte',
+  description: 'Entdecken Sie das umfangreiche Produktsortiment von A&G Thermotechnik: Wärmepumpen, Gaskessel, Fußbodenheizung, Klimaanlage und mehr.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Unsere <span class="text-accent">Produkte</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      A&G Thermotechnik GmbH bietet eine Vielzahl hochwertiger Produkte, die Effizienz, Innovation und Bequemlichkeit vereinen. Entdecken Sie unsere Lösungen für Heizung, Kühlung, Lüftung und Warmwasser.
+    </Fragment>
+  </Hero>
+
+  <Features2
+    tagline="Produktkategorien"
+    title="Unsere Produktpalette"
+    subtitle="Von Wärmepumpen bis intelligente Steuerung — wir bieten die passende Lösung für jeden Bedarf."
+    items={[
+      {
+        title: 'Wärmepumpen',
+        description: 'Innovative Systeme, die Umweltenergie für effizientes Heizen und Kühlen nutzen.',
+        icon: 'tabler:temperature',
+        callToAction: { text: 'Details', href: '/produkte/waermepumpen' },
+      },
+      {
+        title: 'Gaskessel',
+        description: 'Zuverlässige und kosteneffektive Heizung mit moderner Brennwerttechnologie.',
+        icon: 'tabler:flame',
+        callToAction: { text: 'Details', href: '/produkte/gaskessel' },
+      },
+      {
+        title: 'Biomassekessel',
+        description: 'Umweltfreundliche Heizlösung mit erneuerbaren Energien wie Holzpellets.',
+        icon: 'tabler:leaf',
+        callToAction: { text: 'Details', href: '/produkte/biomassekessel' },
+      },
+      {
+        title: 'Solarwarmwasserbereiter',
+        description: 'Effiziente und umweltfreundliche Warmwasserbereitung mit Sonnenenergie.',
+        icon: 'tabler:sun',
+        callToAction: { text: 'Details', href: '/produkte/solarwarmwasserbereiter' },
+      },
+      {
+        title: 'Fußbodenheizung',
+        description: 'Gleichmäßige Wärmeverteilung für maximalen Komfort und Ästhetik.',
+        icon: 'tabler:grid-dots',
+        callToAction: { text: 'Details', href: '/produkte/fussbodenheizung' },
+      },
+      {
+        title: 'Heizkörper',
+        description: 'Bewährte und funktionelle Wärmeübertragung für verschiedene Raumtypen.',
+        icon: 'tabler:border-all',
+        callToAction: { text: 'Details', href: '/produkte/heizkoerper' },
+      },
+      {
+        title: 'Ventilatorkonvektoren',
+        description: 'Moderne und vielseitige Lösung für schnelles Heizen und Kühlen.',
+        icon: 'tabler:wind',
+        callToAction: { text: 'Details', href: '/produkte/ventilatorkonvektoren' },
+      },
+      {
+        title: 'Klimaanlage',
+        description: 'Ganzjährige Komforttemperatur und unabhängige Temperaturregelung.',
+        icon: 'tabler:snowflake',
+        callToAction: { text: 'Details', href: '/produkte/klimaanlage' },
+      },
+      {
+        title: 'Intelligente Steuerung',
+        description: 'Systemoptimierung mit Komfort und präziser Steuerung per Smartphone.',
+        icon: 'tabler:smart-home',
+        callToAction: { text: 'Details', href: '/produkte/intelligente-steuerung' },
+      },
+      {
+        title: 'Belüftung',
+        description: 'Hocheffiziente Lüftungssysteme für optimale Luftqualität.',
+        icon: 'tabler:air-conditioning',
+        callToAction: { text: 'Details', href: '/produkte/belueftung' },
+      },
+    ]}
+  />
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Beratung vereinbaren',
+        href: '/kontakt',
+        icon: 'tabler:phone',
+      },
+    ]}
+  >
+    <Fragment slot="title">Fragen zu unseren Produkten?</Fragment>
+    <Fragment slot="subtitle">
+      Kontaktieren Sie uns für eine persönliche Beratung — wir finden die optimale Lösung für Ihre Anforderungen.
+    </Fragment>
+  </CallToAction>
+</Layout>

@@ -1,0 +1,89 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Dienstleistungen',
+  description: 'Unsere Dienstleistungen: Beratung, Planung, Installation, Wartung und Reparatur von Heizungs-, Klima- und Lüftungssystemen.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Unsere <span class="text-accent">Dienstleistungen</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      Vertrauen Sie A&G Thermotechnik für hochwertige Lösungen, die Ihre Räume in gemütliche und komfortable Umgebungen verwandeln. Wir bieten eine breite Palette von spezialisierten Dienstleistungen.
+    </Fragment>
+  </Hero>
+
+  <Features2
+    tagline="Leistungen"
+    title="Von der Beratung bis zum Service"
+    subtitle="Wir begleiten Sie durch den gesamten Prozess — von der ersten Idee bis zur langfristigen Betreuung."
+    items={[
+      {
+        title: 'Beratung',
+        description: 'In enger Zusammenarbeit mit unseren Experten definieren wir Ihre Ideen und Bedürfnisse.',
+        icon: 'tabler:message-circle',
+        callToAction: { text: 'Details', href: '/dienstleistungen/beratung' },
+      },
+      {
+        title: 'Konzept und Planung',
+        description: 'Detaillierte Pläne für jeden Aspekt der Installation — von der Idee zur Realität.',
+        icon: 'tabler:clipboard-list',
+        callToAction: { text: 'Details', href: '/dienstleistungen/konzept-und-planung' },
+      },
+      {
+        title: 'Energie- und Kostenoptimierung',
+        description: 'Verbesserung der Systemeffizienz für geringere Energiekosten und bessere Umweltbilanz.',
+        icon: 'tabler:chart-line',
+        callToAction: { text: 'Details', href: '/dienstleistungen/energie-kostenoptimierung' },
+      },
+      {
+        title: 'Lieferung',
+        description: 'Zuverlässige Lieferung hochwertiger Geräte und Materialien namhafter Hersteller.',
+        icon: 'tabler:truck-delivery',
+        callToAction: { text: 'Details', href: '/dienstleistungen/lieferung' },
+      },
+      {
+        title: 'Installation',
+        description: 'Professionelle Installation und komplette Konstruktion durch qualifizierte Techniker.',
+        icon: 'tabler:tool',
+        callToAction: { text: 'Details', href: '/dienstleistungen/installation' },
+      },
+      {
+        title: 'Reparatur und Sanierung',
+        description: 'Professionelle Reparatur und Modernisierung bestehender Heizungs-, Klima- und Lüftungsanlagen.',
+        icon: 'tabler:settings',
+        callToAction: { text: 'Details', href: '/dienstleistungen/reparatur-sanierung' },
+      },
+      {
+        title: 'Service und Wartung',
+        description: 'Langfristige Betreuung mit regelmäßigen Inspektionen und technischem Support.',
+        icon: 'tabler:headset',
+        callToAction: { text: 'Details', href: '/dienstleistungen/service-wartung' },
+      },
+    ]}
+  />
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Beratung vereinbaren',
+        href: '/kontakt',
+        icon: 'tabler:phone',
+      },
+    ]}
+  >
+    <Fragment slot="title">Interesse an unseren Dienstleistungen?</Fragment>
+    <Fragment slot="subtitle">
+      Vereinbaren Sie ein unverbindliches Erstgespräch — wir beraten Sie gerne zu Ihrem Projekt.
+    </Fragment>
+  </CallToAction>
+</Layout>

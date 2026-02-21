@@ -1,0 +1,94 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'Datenschutzerklärung',
+  description: 'Datenschutzerklärung der A&G Thermotechnik GmbH — Informationen zur Verarbeitung Ihrer personenbezogenen Daten.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">Datenschutzerklärung</Fragment>
+  </Hero>
+
+  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-12 md:py-16">
+    <div class="prose prose-lg max-w-none">
+      <h2>Verantwortliche Stelle</h2>
+      <p>
+        <strong>A&G Thermotechnik GmbH</strong><br />
+        Am Trippelsberg 92<br />
+        40589 Düsseldorf<br />
+        E-Mail: <a href="mailto:info@agthermotechnik.de">info@agthermotechnik.de</a><br />
+        Telefon: 0176 38 208 475
+      </p>
+
+      <h2>Zuständige Aufsichtsbehörde für den Datenschutz</h2>
+      <p>
+        Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen<br />
+        Bettina Gayk<br />
+        Kavalleriestraße 2-4, 40213 Düsseldorf<br />
+        Telefon: 0211/384-24-0<br />
+        E-Mail: poststelle@ldi.nrw.de<br />
+        Website: <a href="https://www.ldi.nrw.de" target="_blank" rel="noopener noreferrer">ldi.nrw.de</a>
+      </p>
+
+      <h2>Geltungsbereich</h2>
+      <p>
+        Diese Datenschutzerklärung gilt für unsere Online-Präsenzen (Websites), Social-Media-Profile, E-Mail-Kommunikation und mobile Apps.
+      </p>
+
+      <h2>Rechtsgrundlagen der Verarbeitung</h2>
+      <p>Wir verarbeiten personenbezogene Daten auf Grundlage folgender Rechtsgrundlagen der DSGVO:</p>
+      <ul>
+        <li><strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</strong> — Wenn Sie uns Ihre Einwilligung zur Datenverarbeitung gegeben haben.</li>
+        <li><strong>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</strong> — Wenn die Verarbeitung zur Erfüllung eines Vertrags mit Ihnen erforderlich ist.</li>
+        <li><strong>Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO)</strong> — Wenn die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist.</li>
+        <li><strong>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)</strong> — Wenn die Verarbeitung auf unseren berechtigten Interessen basiert.</li>
+      </ul>
+
+      <h2>Ihre Rechte</h2>
+      <p>Gemäß der DSGVO stehen Ihnen folgende Rechte zu:</p>
+      <ul>
+        <li><strong>Auskunftsrecht (Art. 15 DSGVO)</strong> — Sie haben das Recht, Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten zu erhalten.</li>
+        <li><strong>Recht auf Berichtigung (Art. 16 DSGVO)</strong> — Sie haben das Recht, unrichtige Daten berichtigen zu lassen.</li>
+        <li><strong>Recht auf Löschung (Art. 17 DSGVO)</strong> — Sie haben das Recht auf Löschung Ihrer Daten (Recht auf Vergessenwerden).</li>
+        <li><strong>Recht auf Einschränkung (Art. 18 DSGVO)</strong> — Sie haben das Recht, die Einschränkung der Verarbeitung zu verlangen.</li>
+        <li><strong>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</strong> — Sie haben das Recht, Ihre Daten in einem übertragbaren Format zu erhalten.</li>
+        <li><strong>Widerspruchsrecht (Art. 21 DSGVO)</strong> — Sie haben das Recht, der Verarbeitung Ihrer Daten zu widersprechen.</li>
+        <li><strong>Beschwerderecht (Art. 77 DSGVO)</strong> — Sie haben das Recht, sich bei einer Aufsichtsbehörde zu beschweren.</li>
+      </ul>
+
+      <h2>Kommunikation</h2>
+      <p>
+        Wenn Sie mit uns per Telefon, E-Mail oder über ein Kontaktformular in Verbindung treten, werden die von Ihnen übermittelten Daten auf unseren Endgeräten, E-Mail-Servern und Webservern gespeichert und zur Bearbeitung Ihres Anliegens verwendet.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        Diese Website verwendet nur technisch notwendige Cookies, die für den Betrieb der Website erforderlich sind. Es werden keine Tracking-Cookies oder Werbe-Cookies verwendet.
+      </p>
+
+      <h2>Kontaktformular</h2>
+      <p>
+        Wenn Sie uns über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+      </p>
+
+      <h2>Hosting</h2>
+      <p>
+        Diese Website wird bei Netlify, Inc. gehostet. Beim Besuch unserer Website werden automatisch technische Zugriffsdaten (Server-Logfiles) durch den Hosting-Anbieter erhoben. Diese umfassen die IP-Adresse, den Browser-Typ, das Betriebssystem, die Referrer-URL, den Zeitpunkt des Zugriffs sowie die aufgerufene Seite.
+      </p>
+
+      <h2>SSL/TLS-Verschlüsselung</h2>
+      <p>
+        Diese Seite nutzt aus Sicherheitsgründen eine SSL/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+      </p>
+
+      <h2>Google Maps</h2>
+      <p>
+        Wir verwenden auf unserer Kontaktseite Google Maps zur Darstellung unseres Standorts und zur Routenplanung. Durch die Nutzung von Google Maps können Informationen über Ihre Nutzung dieser Website an Google übermittelt werden. Weitere Informationen finden Sie in der Datenschutzerklärung von Google.
+      </p>
+    </div>
+  </section>
+</Layout>

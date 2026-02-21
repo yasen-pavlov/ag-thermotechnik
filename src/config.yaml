@@ -1,0 +1,37 @@
+site:
+  name: 'A&G Thermotechnik'
+  site: 'https://www.agthermotechnik.de'
+  base: '/'
+  trailingSlash: false
+
+metadata:
+  title:
+    default: 'A&G Thermotechnik GmbH'
+    template: '%s — A&G Thermotechnik'
+  description: 'A&G Thermotechnik GmbH — Ihr Experte für Heizungs-, Klima- und Lüftungssysteme in Düsseldorf. Über 20 Jahre Erfahrung. Wärmepumpen, Gaskessel, Fußbodenheizung und mehr.'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: 'A&G Thermotechnik'
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+
+i18n:
+  language: de
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: false
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null
+
+ui:
+  theme: 'light:only'

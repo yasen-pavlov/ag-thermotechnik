@@ -1,0 +1,110 @@
+# Old Drupal URL redirects to new clean URLs
+
+# Homepage
+/de    /    301
+/de/   /    301
+/en    /    301
+/en/   /    301
+
+# About
+/de/ueber-uns    /ueber-uns    301
+/en/about-us     /ueber-uns    301
+
+# Products overview
+/de/produkte     /produkte     301
+/en/products     /produkte     301
+
+# Individual products (old used /de/products/ with English path)
+/de/products/waermepumpen           /produkte/waermepumpen           301
+/de/products/gaskessel              /produkte/gaskessel              301
+/de/products/biomassekessel         /produkte/biomassekessel         301
+/de/products/solarwarmwasserbereiter /produkte/solarwarmwasserbereiter 301
+/de/products/fussbodenheizung       /produkte/fussbodenheizung       301
+/de/products/heizkoerper            /produkte/heizkoerper            301
+/de/products/ventilatorkonvektoren  /produkte/ventilatorkonvektoren  301
+/de/products/klimaanlage            /produkte/klimaanlage            301
+/de/products/intelligente-steuerung /produkte/intelligente-steuerung 301
+/de/products/belueftung             /produkte/belueftung             301
+
+# English product URLs
+/en/products/heat-pumps             /produkte/waermepumpen           301
+/en/products/gas-boilers            /produkte/gaskessel              301
+/en/products/biomass-boilers        /produkte/biomassekessel         301
+/en/products/solar-hot-water-heaters /produkte/solarwarmwasserbereiter 301
+/en/products/underfloor-heating     /produkte/fussbodenheizung       301
+/en/products/radiators              /produkte/heizkoerper            301
+/en/products/fan-coils              /produkte/ventilatorkonvektoren  301
+/en/products/air-conditioning       /produkte/klimaanlage            301
+/en/products/smart-controls         /produkte/intelligente-steuerung 301
+/en/products/ventilation            /produkte/belueftung             301
+
+# Services overview
+/de/dienstleistungen                /dienstleistungen                301
+/en/services                        /dienstleistungen                301
+
+# Individual services (mixed /de/services/ and /de/dienstleistungen/ paths)
+/de/services/beratung                                              /dienstleistungen/beratung              301
+/de/services/konzept-und-planung                                   /dienstleistungen/konzept-und-planung   301
+/de/services/energie-und-kostenoptimierung                         /dienstleistungen/energie-kostenoptimierung 301
+/de/dienstleistungen/lieferung                                     /dienstleistungen/lieferung             301
+/de/dienstleistungen/installation-und-komplette-konstruktion       /dienstleistungen/installation          301
+/de/dienstleistungen/reparatur-und-sanierung-bestehender-anlagen   /dienstleistungen/reparatur-sanierung   301
+/de/dienstleistungen/service                                       /dienstleistungen/service-wartung       301
+
+# English services
+/en/services/consulting                                            /dienstleistungen/beratung              301
+/en/services/concept-and-planning                                  /dienstleistungen/konzept-und-planung   301
+/en/services/energy-and-cost-optimization                          /dienstleistungen/energie-kostenoptimierung 301
+/en/services/delivery                                              /dienstleistungen/lieferung             301
+/en/services/installation-and-complete-construction                /dienstleistungen/installation          301
+/en/services/repair-and-renovation-existing-installations          /dienstleistungen/reparatur-sanierung   301
+/en/services/service                                               /dienstleistungen/service-wartung       301
+
+# Projects overview (mixed /de/projects/ and /de/projekte/)
+/de/projects                        /projekte                        301
+/de/projekte                        /projekte                        301
+/en/completed-projects              /projekte                        301
+
+# Individual projects - old URLs to new clean slugs
+/de/projekte/luft-wasser-waermepumpe-hybrid-heiz-sys-teme-buderus-logaplus-wlw-7-r290-mit-gas   /projekte/buderus-logaplus-hybrid   301
+/de/projekte/luft-wasser-waermepumpe-vaillant-arotherm-plus-r290-mit-hhs-hybrid-system-nrw       /projekte/vaillant-arotherm-nrw      301
+/de/projekte/luft-wasser-waermepumpe-vaillant-arotherm-plus-r290-mit-hhs-hybrid-system-rheinland-pfalz /projekte/vaillant-arotherm-rheinland-pfalz 301
+/de/projekte/luft-wasser-waermepumpe-panasonic-aquarea-r290-nrw                                  /projekte/panasonic-aquarea          301
+/de/projekte/luft-wasser-waermepumpe-buderus-logatherm-wlw-r290-nrw                              /projekte/buderus-logatherm          301
+/de/projekte/hybrid-heizungsanlage-nrw-luft-wasser-waermepumpe-viessmann-vitocal-250-r290-mit-oelkessel /projekte/viessmann-vitocal-hybrid 301
+/de/projekte/luft-wasser-waermepumpe-hisense-hi-therma-12-kw                                     /projekte/hisense-hi-therma          301
+/de/projekte/hybrid-luft-wasser-waermepumpe-hisense-hi-therma-12-kw-mit-pelletheizung-nrw        /projekte/hisense-pelletheizung-hybrid 301
+/de/projekte/luft-wasser-waermepumpe-daikin-alterma-3-r32-nrw                                    /projekte/daikin-altherma             301
+/de/projekte/gaskessel-bosch-condense-7000i-multisplit-klimaanlage-daikin-fussbodenheizung-anlage-einer /projekte/bosch-daikin-fussbodenheizung 301
+/de/projects/heizungsanlage-mit-luft-wasser-waermepumpe-hitachi-yutaki-s-10hp                    /projekte/hitachi-yutaki-s-10hp      301
+/de/projekte/installation-von-fussbodenheizung-einem-hause                                       /projekte/fussbodenheizung-haus       301
+/de/projects/heizungsanlage-mit-luft-wasser-waermepumpe-hitachi-yataki-s-25-kw                   /projekte/hitachi-yutaki-s-25kw      301
+/de/projects/heizungsanlage-mit-luft-wasser-waermepumpe-bosch-compress-3000-aws-12-kw            /projekte/bosch-compress-3000-1       301
+/de/projects/heizungsanlage-mit-luft-wasser-waermepumpe-bosch-compress-3000-aws-12-kw-0          /projekte/bosch-compress-3000-2       301
+/de/projects/gaskessel-bosch-condense-7000i-w                                                    /projekte/bosch-condense-7000i        301
+/de/projects/installation-einer-haus-und-schwimmbadheizung                                       /projekte/schwimmbadheizung           301
+/de/projects/heizungsanlage-mit-luft-wasser-waermepumpe-crystal-onyx-12-kw                       /projekte/crystal-onyx-1              301
+/de/projects/heizungsanlage-mit-luft-wasser-waermepumpe-crystal-onyx-12-kw-0                     /projekte/crystal-onyx-2              301
+/de/projects/fussbodenheizung-und-luft-wasser-waermepumpe-crystal-lava                           /projekte/crystal-lava                301
+/de/projects/luft-wasser-waermepumpe-gorenje                                                     /projekte/gorenje-waermepumpe         301
+/de/projekte/gaskessel-heizungsinstallation                                                      /projekte/gaskessel-heizungsinstallation 301
+/de/projects/installation-einer-fussbodenheizung                                                 /projekte/fussbodenheizung-installation 301
+/de/projekte/installation-von-fussbodenheizung-einer-wohnung                                     /projekte/fussbodenheizung-wohnung    301
+/de/projects/heizungsanlage-mit-pelletkessel                                                     /projekte/pelletkessel-heizung        301
+/de/projects/sonnenkollektoren-fuer-warmwasser                                                   /projekte/sonnenkollektoren           301
+/de/projects/heizungsanlage-mit-pelletkesseln                                                    /projekte/pelletkesseln-heizung       301
+/de/projekte/pelletheizung-einfamilienhaus                                                       /projekte/pelletheizung-einfamilienhaus 301
+
+# Contact
+/de/kontakt                         /kontakt                         301
+/en/contact                         /kontakt                         301
+
+# Calculator
+/de/kalkulator                      /                                301
+
+# Legal
+/de/impressum                       /impressum                       301
+/en/impressum                       /impressum                       301
+/de/datenschutzerklaerung           /datenschutz                     301
+/de/datenschutz                     /datenschutz                     301
+/en/privacy                         /datenschutz                     301

@@ -1,0 +1,128 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('project');
+  return projects.map((project) => ({
+    params: { slug: project.data.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+
+const metadata = {
+  title: project.data.title,
+  description: `Abgeschlossenes Projekt: ${project.data.title} — A&G Thermotechnik GmbH`,
+};
+
+const images = project.data.images || [];
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      {project.data.title}
+    </Fragment>
+  </Hero>
+
+  <section class="mx-auto max-w-5xl px-4 sm:px-6 py-12 md:py-16">
+    <!-- Products used -->
+    {project.data.products && project.data.products.length > 0 && (
+      <div class="mb-8">
+        <h2 class="text-xl font-bold mb-3">Komponenten</h2>
+        <div class="flex flex-wrap gap-2">
+          {project.data.products.map((prod) => (
+            <span class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">{prod}</span>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Description -->
+    <div class="prose prose-lg max-w-none mb-12">
+      <Content />
+    </div>
+
+    <!-- Photo Gallery -->
+    {images.length > 0 && (
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Projektgalerie</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
+          {images.map((image, index) => (
+            <a
+              href={image}
+              class="glightbox block aspect-square bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              data-gallery="project-gallery"
+            >
+              <img
+                src={image}
+                alt={`${project.data.title} - Bild ${index + 1}`}
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Back link -->
+    <div class="mt-12">
+      <a href="/projekte" class="inline-flex items-center text-primary hover:underline font-medium">
+        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Zurück zu allen Projekten
+      </a>
+    </div>
+  </section>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Ihr Projekt besprechen',
+        href: '/kontakt',
+        icon: 'tabler:phone',
+      },
+    ]}
+  >
+    <Fragment slot="title">Ähnliches Projekt geplant?</Fragment>
+    <Fragment slot="subtitle">
+      Kontaktieren Sie uns — wir beraten Sie gerne zu Ihrem Vorhaben.
+    </Fragment>
+  </CallToAction>
+</Layout>
+
+<!-- GLightbox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script is:inline src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof GLightbox !== 'undefined') {
+      GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+      });
+    }
+  });
+  document.addEventListener('astro:page-load', function() {
+    if (typeof GLightbox !== 'undefined') {
+      GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+      });
+    }
+  });
+</script>
