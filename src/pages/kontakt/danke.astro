@@ -1,0 +1,44 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Nachricht gesendet',
+  description: 'Vielen Dank für Ihre Nachricht an A&G Thermotechnik GmbH.',
+  robots: { index: false, follow: false },
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Vielen Dank für Ihre <span class="text-accent">Nachricht</span>!
+    </Fragment>
+    <Fragment slot="subtitle">
+      Wir haben Ihre Anfrage erhalten und werden uns so schnell wie möglich bei Ihnen melden.
+    </Fragment>
+  </Hero>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Zur Startseite',
+        href: '/',
+        icon: 'tabler:home',
+      },
+      {
+        text: 'Zurück zum Kontakt',
+        href: '/kontakt',
+        icon: 'tabler:arrow-left',
+      },
+    ]}
+  >
+    <Fragment slot="title">Wie geht es weiter?</Fragment>
+    <Fragment slot="subtitle">
+      Unser Team wird Ihre Anfrage prüfen und sich innerhalb von 1–2 Werktagen bei Ihnen melden.<br class="hidden md:inline" />
+      Bei dringenden Anliegen erreichen Sie uns telefonisch unter <span class="font-semibold">+49 176 38 208 475</span>.
+    </Fragment>
+  </CallToAction>
+</Layout>
