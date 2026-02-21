@@ -19,6 +19,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# claude code local settings
+.claude/settings.local.json
+
 pnpm-lock.yaml
 
 .astro
