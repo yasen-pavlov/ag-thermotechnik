@@ -43,14 +43,9 @@ const images = project.data.images || [];
       </div>
     )}
 
-    <!-- Description -->
-    <div class="prose prose-lg max-w-none mb-12">
-      <Content />
-    </div>
-
     <!-- Photo Gallery -->
     {images.length > 0 && (
-      <div>
+      <div class="mb-12">
         <h2 class="text-2xl font-bold mb-6">Projektgalerie</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
           {images.map((image, index) => (
@@ -72,6 +67,11 @@ const images = project.data.images || [];
         </div>
       </div>
     )}
+
+    <!-- Description -->
+    <div class="prose prose-lg max-w-none mb-12">
+      <Content />
+    </div>
 
     <!-- Back link -->
     <div class="mt-12">
