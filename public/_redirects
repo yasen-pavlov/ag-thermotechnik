@@ -17,26 +17,31 @@
 # Individual products (old used /de/products/ with English path)
 /de/products/waermepumpen           /produkte/waermepumpen           301
 /de/products/gaskessel              /produkte/gaskessel              301
-/de/products/biomassekessel         /produkte/biomassekessel         301
-/de/products/solarwarmwasserbereiter /produkte/solarwarmwasserbereiter 301
+/de/products/biomassekessel         /produkte                        301
+/de/products/solarwarmwasserbereiter /produkte                        301
 /de/products/fussbodenheizung       /produkte/fussbodenheizung       301
 /de/products/heizkoerper            /produkte/heizkoerper            301
 /de/products/ventilatorkonvektoren  /produkte/ventilatorkonvektoren  301
 /de/products/klimaanlage            /produkte/klimaanlage            301
 /de/products/intelligente-steuerung /produkte/intelligente-steuerung 301
-/de/products/belueftung             /produkte/belueftung             301
+/de/products/belueftung             /produkte                        301
 
 # English product URLs
 /en/products/heat-pumps             /produkte/waermepumpen           301
 /en/products/gas-boilers            /produkte/gaskessel              301
-/en/products/biomass-boilers        /produkte/biomassekessel         301
-/en/products/solar-hot-water-heaters /produkte/solarwarmwasserbereiter 301
+/en/products/biomass-boilers        /produkte                        301
+/en/products/solar-hot-water-heaters /produkte                        301
 /en/products/underfloor-heating     /produkte/fussbodenheizung       301
 /en/products/radiators              /produkte/heizkoerper            301
 /en/products/fan-coils              /produkte/ventilatorkonvektoren  301
 /en/products/air-conditioning       /produkte/klimaanlage            301
 /en/products/smart-controls         /produkte/intelligente-steuerung 301
-/en/products/ventilation            /produkte/belueftung             301
+/en/products/ventilation            /produkte                        301
+
+# Removed products — redirect to products overview
+/produkte/biomassekessel            /produkte                        301
+/produkte/solarwarmwasserbereiter   /produkte                        301
+/produkte/belueftung                /produkte                        301
 
 # Services overview
 /de/dienstleistungen                /dienstleistungen                301
