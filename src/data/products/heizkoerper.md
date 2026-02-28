@@ -3,7 +3,7 @@ title: "Heizkörper"
 description: "Radiatoren sind etablierte Mittel für Wärmeübertragung und der Klassiker der Raumerwärmung - Effizienz, Zuverlässigkeit und Ästhetik vereint."
 slug: "heizkoerper"
 icon: "tabler:radiator"
-image: "/images/products/heizkoerper.jpeg"
+image: "~/assets/images/products/heizkoerper.jpeg"
 features:
   - title: "Traditionelle Gemütlichkeit"
     description: "Geringer Installationsaufwand und eine traditionelle Atmosphäre der Gemütlichkeit und des Komforts."

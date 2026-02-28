@@ -4,11 +4,11 @@ slug: "bosch-compress-3000-2"
 products:
   - "BOSCH Compress 3000 AWS 12 kW Wärmepumpe"
 images:
-  - "/images/projects/bosch-compress-3000-2/IMG_20230109_173020_576.jpg"
-  - "/images/projects/bosch-compress-3000-2/IMG_20230109_173031_763.jpg"
-  - "/images/projects/bosch-compress-3000-2/IMG_20230109_173041_935.jpg"
-  - "/images/projects/bosch-compress-3000-2/IMG_20230109_173252_626.jpg"
-  - "/images/projects/bosch-compress-3000-2/IMG_20230109_173239_776.jpg"
+  - "~/assets/images/projects/bosch-compress-3000-2/IMG_20230109_173020_576.jpg"
+  - "~/assets/images/projects/bosch-compress-3000-2/IMG_20230109_173031_763.jpg"
+  - "~/assets/images/projects/bosch-compress-3000-2/IMG_20230109_173041_935.jpg"
+  - "~/assets/images/projects/bosch-compress-3000-2/IMG_20230109_173252_626.jpg"
+  - "~/assets/images/projects/bosch-compress-3000-2/IMG_20230109_173239_776.jpg"
 category: "waermepumpen"
 order: 15
 ---

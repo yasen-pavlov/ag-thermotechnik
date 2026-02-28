@@ -4,12 +4,12 @@ slug: "fussbodenheizung-wohnung"
 products:
   - "Fußbodenheizung"
 images:
-  - "/images/projects/fussbodenheizung-wohnung/IMG_20220222_135304.jpg"
-  - "/images/projects/fussbodenheizung-wohnung/IMG_20220222_135246.jpg"
-  - "/images/projects/fussbodenheizung-wohnung/IMG_20220222_135205.jpg"
-  - "/images/projects/fussbodenheizung-wohnung/IMG_20220222_135153.jpg"
-  - "/images/projects/fussbodenheizung-wohnung/IMG_20220222_135143.jpg"
-  - "/images/projects/fussbodenheizung-wohnung/IMG_20220222_135227.jpg"
+  - "~/assets/images/projects/fussbodenheizung-wohnung/IMG_20220222_135304.jpg"
+  - "~/assets/images/projects/fussbodenheizung-wohnung/IMG_20220222_135246.jpg"
+  - "~/assets/images/projects/fussbodenheizung-wohnung/IMG_20220222_135205.jpg"
+  - "~/assets/images/projects/fussbodenheizung-wohnung/IMG_20220222_135153.jpg"
+  - "~/assets/images/projects/fussbodenheizung-wohnung/IMG_20220222_135143.jpg"
+  - "~/assets/images/projects/fussbodenheizung-wohnung/IMG_20220222_135227.jpg"
 category: "fussbodenheizung"
 order: 24
 ---

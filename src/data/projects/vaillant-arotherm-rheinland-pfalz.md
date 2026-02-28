@@ -5,13 +5,13 @@ products:
   - "Luft-Wasser-Wärmepumpe Vaillant aroTHERM plus"
   - "HHS Hybrid System"
 images:
-  - "/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131035_460.jpg"
-  - "/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131126_412.jpg"
-  - "/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131131_975.jpg"
-  - "/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131138_729.jpg"
-  - "/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131147_991.jpg"
-  - "/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131202_344.jpg"
-  - "/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131207_056.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131035_460.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131126_412.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131131_975.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131138_729.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131147_991.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131202_344.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-rheinland-pfalz/IMG_20250524_131207_056.jpg"
 category: "hybrid"
 order: 3
 ---

@@ -5,12 +5,12 @@ products:
   - "Crystal Lava Wärmepumpe"
   - "Fußbodenheizung"
 images:
-  - "/images/projects/crystal-lava/IMG_20220519_193409.jpg"
-  - "/images/projects/crystal-lava/IMG_20221224_162114_270.jpg"
-  - "/images/projects/crystal-lava/IMG_20221224_162106_902.jpg"
-  - "/images/projects/crystal-lava/IMG_20220517_173342.jpg"
-  - "/images/projects/crystal-lava/IMG_20220519_193354.jpg"
-  - "/images/projects/crystal-lava/IMG_20220304_173503.jpg"
+  - "~/assets/images/projects/crystal-lava/IMG_20220519_193409.jpg"
+  - "~/assets/images/projects/crystal-lava/IMG_20221224_162114_270.jpg"
+  - "~/assets/images/projects/crystal-lava/IMG_20221224_162106_902.jpg"
+  - "~/assets/images/projects/crystal-lava/IMG_20220517_173342.jpg"
+  - "~/assets/images/projects/crystal-lava/IMG_20220519_193354.jpg"
+  - "~/assets/images/projects/crystal-lava/IMG_20220304_173503.jpg"
 category: "waermepumpen"
 order: 20
 ---

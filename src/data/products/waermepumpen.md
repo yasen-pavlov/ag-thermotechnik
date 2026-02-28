@@ -3,7 +3,7 @@ title: "Wärmepumpen"
 description: "Innovative Systeme, die Effizienz, Umweltfreundlichkeit und einfache Bedienung kombinieren - für Heizung und Kühlung."
 slug: "waermepumpen"
 icon: "tabler:temperature"
-image: "/images/products/waermepumpen.jpeg"
+image: "~/assets/images/products/waermepumpen.jpeg"
 features:
   - title: "Luft-Wasser-Wärmepumpen"
     description: "Nutzen die Luft als Energiequelle - kostengünstig, einfach zu installieren und effizient bei verschiedenen Außentemperaturen."

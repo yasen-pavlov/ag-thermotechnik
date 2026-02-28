@@ -3,7 +3,7 @@ title: "Klimaanlage"
 description: "Klimatisierung ist entscheidend für die Schaffung komfortabler und gesunder Wohn- und Arbeitsumgebungen - optimale Temperatur und Luftfeuchtigkeit das ganze Jahr über."
 slug: "klimaanlage"
 icon: "tabler:snowflake"
-image: "/images/products/klimaanlage.jpeg"
+image: "~/assets/images/products/klimaanlage.jpeg"
 features:
   - title: "Temperaturkomfort"
     description: "Optimale Raumtemperatur das ganze Jahr über, unabhängig von der Witterung."

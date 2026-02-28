@@ -4,8 +4,8 @@ slug: "pelletkessel-heizung"
 products:
   - "Pelletkessel"
 images:
-  - "/images/projects/pelletkessel-heizung/IMG_20230317_165135_209.jpg"
-  - "/images/projects/pelletkessel-heizung/IMG_20230317_165137_920.jpg"
+  - "~/assets/images/projects/pelletkessel-heizung/IMG_20230317_165135_209.jpg"
+  - "~/assets/images/projects/pelletkessel-heizung/IMG_20230317_165137_920.jpg"
 category: "biomassekessel"
 order: 25
 ---

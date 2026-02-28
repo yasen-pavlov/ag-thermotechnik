@@ -1,8 +1,11 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { getImage } from 'astro:assets';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Image from '~/components/common/Image.astro';
+import { findImage } from '~/utils/images';
 
 export async function getStaticPaths() {
   const projects = await getCollection('project');
@@ -20,7 +23,19 @@ const metadata = {
   description: `Abgeschlossenes Projekt: ${project.data.title} — A&G Thermotechnik GmbH`,
 };
 
-const images = project.data.images || [];
+const rawImages = project.data.images || [];
+
+// Resolve image paths and generate optimized full-size URLs for GLightbox
+const images = await Promise.all(
+  rawImages.map(async (imgPath: string) => {
+    const resolved = await findImage(imgPath);
+    if (!resolved || typeof resolved === 'string') {
+      return { src: imgPath, fullSrc: imgPath };
+    }
+    const full = await getImage({ src: resolved, width: 1600 });
+    return { src: imgPath, fullSrc: full.src };
+  })
+);
 ---
 
 <Layout metadata={metadata}>
@@ -50,17 +65,17 @@ const images = project.data.images || [];
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
           {images.map((image, index) => (
             <a
-              href={image}
+              href={image.fullSrc}
               class="glightbox block aspect-square bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               data-gallery="project-gallery"
             >
-              <img
-                src={image}
+              <Image
+                src={image.src}
                 alt={`${project.data.title} - Bild ${index + 1}`}
+                width={400}
+                height={400}
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
-                width="400"
-                height="400"
               />
             </a>
           ))}

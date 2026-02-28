@@ -4,11 +4,11 @@ slug: "gorenje-waermepumpe"
 products:
   - "GORENJE Luft-Wasser-Wärmepumpe"
 images:
-  - "/images/projects/gorenje-waermepumpe/WP_20171027_011.jpg"
-  - "/images/projects/gorenje-waermepumpe/WP_20171027_010.jpg"
-  - "/images/projects/gorenje-waermepumpe/WP_20171027_003.jpg"
-  - "/images/projects/gorenje-waermepumpe/WP_20171027_004.jpg"
-  - "/images/projects/gorenje-waermepumpe/WP_20171027_008-1.jpg"
+  - "~/assets/images/projects/gorenje-waermepumpe/WP_20171027_011.jpg"
+  - "~/assets/images/projects/gorenje-waermepumpe/WP_20171027_010.jpg"
+  - "~/assets/images/projects/gorenje-waermepumpe/WP_20171027_003.jpg"
+  - "~/assets/images/projects/gorenje-waermepumpe/WP_20171027_004.jpg"
+  - "~/assets/images/projects/gorenje-waermepumpe/WP_20171027_008-1.jpg"
 category: "waermepumpen"
 order: 21
 ---

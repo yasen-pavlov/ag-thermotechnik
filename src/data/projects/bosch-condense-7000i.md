@@ -4,14 +4,14 @@ slug: "bosch-condense-7000i"
 products:
   - "BOSCH Condense 7000i W Gaskessel"
 images:
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110053_083.jpg"
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110103_046.jpg"
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110113_576.jpg"
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110123_979.jpg"
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110134_252.jpg"
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110353_153.jpg"
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110403_085.jpg"
-  - "/images/projects/bosch-condense-7000i/IMG_20230113_110430_135.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110053_083.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110103_046.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110113_576.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110123_979.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110134_252.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110353_153.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110403_085.jpg"
+  - "~/assets/images/projects/bosch-condense-7000i/IMG_20230113_110430_135.jpg"
 category: "gaskessel"
 order: 16
 ---

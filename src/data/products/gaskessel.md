@@ -3,7 +3,7 @@ title: "Gaskessel"
 description: "Gas-Brennwertkessel als intelligente und wirtschaftliche Lösung für Ihr Heizsystem - zuverlässig, effizient und langlebig."
 slug: "gaskessel"
 icon: "tabler:flame"
-image: "/images/products/gaskessel.jpeg"
+image: "~/assets/images/products/gaskessel.jpeg"
 features:
   - title: "Effizienz & Umwelt"
     description: "Moderne Brennwerttechnologie ermöglicht maximale Nutzung der thermischen Energie durch strategische Wasserdampfkondensation."

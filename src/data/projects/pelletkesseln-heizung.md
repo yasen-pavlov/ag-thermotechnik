@@ -4,11 +4,11 @@ slug: "pelletkesseln-heizung"
 products:
   - "Pelletkessel"
 images:
-  - "/images/projects/pelletkesseln-heizung/CZ20140703085406007-1024x768.jpg"
-  - "/images/projects/pelletkesseln-heizung/CZ20140703085340065-1024x768.jpg"
-  - "/images/projects/pelletkesseln-heizung/CZ20140703085348562-1024x768.jpg"
-  - "/images/projects/pelletkesseln-heizung/CZ20140703085356285-768x1024.jpg"
-  - "/images/projects/pelletkesseln-heizung/CZ20140703085423233-1024x768.jpg"
+  - "~/assets/images/projects/pelletkesseln-heizung/CZ20140703085406007-1024x768.jpg"
+  - "~/assets/images/projects/pelletkesseln-heizung/CZ20140703085340065-1024x768.jpg"
+  - "~/assets/images/projects/pelletkesseln-heizung/CZ20140703085348562-1024x768.jpg"
+  - "~/assets/images/projects/pelletkesseln-heizung/CZ20140703085356285-768x1024.jpg"
+  - "~/assets/images/projects/pelletkesseln-heizung/CZ20140703085423233-1024x768.jpg"
 category: "biomassekessel"
 order: 27
 ---

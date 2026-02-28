@@ -3,7 +3,7 @@ title: "Intelligente Steuerung"
 description: "Intelligente Steuerungen (Smart Controls), die darauf ausgelegt sind, Ihnen persönlichen Komfort für Ihr Wohlbefinden anzubieten."
 slug: "intelligente-steuerung"
 icon: "tabler:smart-home"
-image: "/images/products/intelligente-steuerung.jpeg"
+image: "~/assets/images/products/intelligente-steuerung.jpeg"
 features:
   - title: "Personalisierter Komfort"
     description: "Temperatur, Luftfeuchtigkeit und Belüftung gemäß Ihren Vorlieben und Ihrem Zeitplan anpassen."

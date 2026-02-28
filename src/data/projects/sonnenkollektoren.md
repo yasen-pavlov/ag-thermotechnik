@@ -5,8 +5,8 @@ products:
   - "Sonnenkollektoren"
   - "Warmwasseranlage"
 images:
-  - "/images/projects/sonnenkollektoren/IMG_20170728_1731247-1_0.jpg"
-  - "/images/projects/sonnenkollektoren/IMG_20170728_1732045-1.jpg"
+  - "~/assets/images/projects/sonnenkollektoren/IMG_20170728_1731247-1_0.jpg"
+  - "~/assets/images/projects/sonnenkollektoren/IMG_20170728_1732045-1.jpg"
 category: "solar"
 order: 26
 ---

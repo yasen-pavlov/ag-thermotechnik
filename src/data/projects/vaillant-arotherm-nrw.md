@@ -6,10 +6,10 @@ products:
   - "Alt Viessmann-Gaskessel"
   - "HHS Hybrid System box"
 images:
-  - "/images/projects/vaillant-arotherm-nrw/IMG_20250411_152925_934.jpg"
-  - "/images/projects/vaillant-arotherm-nrw/IMG_20250411_152911_244.jpg"
-  - "/images/projects/vaillant-arotherm-nrw/IMG_20250410_184729_927.jpg"
-  - "/images/projects/vaillant-arotherm-nrw/IMG_20250410_184749_774.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-nrw/IMG_20250411_152925_934.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-nrw/IMG_20250411_152911_244.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-nrw/IMG_20250410_184729_927.jpg"
+  - "~/assets/images/projects/vaillant-arotherm-nrw/IMG_20250410_184749_774.jpg"
 category: "hybrid"
 order: 2
 ---

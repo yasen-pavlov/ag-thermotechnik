@@ -3,7 +3,7 @@ title: "Ventilatorkonvektoren"
 description: "Gebläsekonvektoren oder Fan Coils sind eine moderne und vielseitige Lösung für das Heizen und Kühlen von Räumen."
 slug: "ventilatorkonvektoren"
 icon: "tabler:wind"
-image: "/images/products/ventilatorkonvektoren.jpg"
+image: "~/assets/images/products/ventilatorkonvektoren.jpg"
 features:
   - title: "Schneller und effizienter Betrieb"
     description: "Fan Coils liefern Wärme oder Kühlung schnell und effizient durch erzwungene Konvektion."

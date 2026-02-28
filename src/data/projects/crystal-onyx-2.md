@@ -4,11 +4,11 @@ slug: "crystal-onyx-2"
 products:
   - "CRYSTAL Onyx 12 kW Wärmepumpe"
 images:
-  - "/images/projects/crystal-onyx-2/IMG_20230209_121313_239.jpg"
-  - "/images/projects/crystal-onyx-2/IMG_20230209_121306_732.jpg"
-  - "/images/projects/crystal-onyx-2/IMG_20230209_121256_294.jpg"
-  - "/images/projects/crystal-onyx-2/IMG_20230209_115020_073.jpg"
-  - "/images/projects/crystal-onyx-2/IMG_20230209_115008_830.jpg"
+  - "~/assets/images/projects/crystal-onyx-2/IMG_20230209_121313_239.jpg"
+  - "~/assets/images/projects/crystal-onyx-2/IMG_20230209_121306_732.jpg"
+  - "~/assets/images/projects/crystal-onyx-2/IMG_20230209_121256_294.jpg"
+  - "~/assets/images/projects/crystal-onyx-2/IMG_20230209_115020_073.jpg"
+  - "~/assets/images/projects/crystal-onyx-2/IMG_20230209_115008_830.jpg"
 category: "waermepumpen"
 order: 19
 ---

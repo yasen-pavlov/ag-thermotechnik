@@ -3,7 +3,7 @@ title: "Fußbodenheizung"
 description: "Ein modernes Flächenheizsystem - effiziente Lösung, besonders in Kombination mit Wärmepumpen für einen kostengünstigen Betrieb."
 slug: "fussbodenheizung"
 icon: "tabler:grid-dots"
-image: "/images/products/fussbodenheizung.jpeg"
+image: "~/assets/images/products/fussbodenheizung.jpeg"
 features:
   - title: "Gleichmäßige Wärmeverteilung"
     description: "Gleichmäßige Wärmeverteilung im gesamten Raum ohne Temperaturzonen."
