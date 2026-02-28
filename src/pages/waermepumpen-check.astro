@@ -1,0 +1,34 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'Wärmepumpen-Check',
+  description:
+    'Prüfen Sie kostenlos, ob eine Wärmepumpe für Ihr Gebäude geeignet ist. Der Wärmepumpen-Check von A&G Thermotechnik in Düsseldorf.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Wärmepumpen-<span class="text-accent">Check</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      Finden Sie heraus, ob eine Wärmepumpe für Ihr Gebäude geeignet ist — kostenlos und unverbindlich.
+    </Fragment>
+  </Hero>
+
+  <section class="mx-auto max-w-5xl px-4 sm:px-6 py-12 md:py-16">
+    <div class="flex justify-center">
+      <iframe
+        id="check"
+        src="https://check.autarc.energy/ag_thermotechnik_gmbh/wrmepumpencheck/"
+        style="width: 100%; max-width: 64rem; height: 100%; min-height: 36rem; border: none; margin: auto;"
+        title="Wärmepumpen-Check"
+        loading="lazy"></iframe>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline src="https://check.autarc.energy/check.js"></script>

@@ -37,6 +37,10 @@ export const headerData = {
       href: getPermalink('/projekte'),
     },
     {
+      text: 'WP-Check',
+      href: getPermalink('/waermepumpen-check'),
+    },
+    {
       text: 'Kontakt',
       href: getPermalink('/kontakt'),
     },
