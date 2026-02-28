@@ -1,6 +1,6 @@
 site:
   name: 'A&G Thermotechnik'
-  site: 'https://www.agthermotechnik.de'
+  site: 'https://agthermotechnik.de'
   base: '/'
   trailingSlash: false
 

@@ -16,7 +16,7 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehype
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  site: 'https://www.agthermotechnik.de',
+  site: 'https://agthermotechnik.de',
   output: 'static',
 
   integrations: [
@@ -61,7 +61,7 @@ export default defineConfig({
   ],
 
   image: {
-    domains: ['cdn.pixabay.com', 'www.agthermotechnik.de'],
+    domains: ['cdn.pixabay.com', 'agthermotechnik.de'],
   },
 
   markdown: {
