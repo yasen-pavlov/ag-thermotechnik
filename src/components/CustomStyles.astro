@@ -1,6 +1,12 @@
 ---
 import '@fontsource-variable/inter';
+
+import interLatinUrl from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import interLatinExtUrl from '@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2?url';
 ---
+
+<link rel="preload" href={interLatinUrl} as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={interLatinExtUrl} as="font" type="font/woff2" crossorigin />
 
 <style is:inline>
   :root {
