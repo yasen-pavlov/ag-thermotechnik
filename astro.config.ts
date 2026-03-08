@@ -23,7 +23,9 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      filter: (page) => !page.includes('/kontakt/danke'),
+    }),
     mdx(),
     icon({
       include: {
